@@ -10,9 +10,9 @@ class UsersList extends React.Component {
   render() {
     return (
       <div>
-        <h1>UsersList</h1>
-        {this.props.users.map( (user, index) => (
-          <UserCard user={user} key={index} />
+        {/* <h1>UsersList</h1> */}
+        {this.props.users.map( (user, index, array) => (
+          <UserCard user={user} order={index} length={array.length} key={index} />
         ))}
       </div>
     )

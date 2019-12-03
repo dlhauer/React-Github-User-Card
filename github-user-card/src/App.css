@@ -20,3 +20,19 @@
 .App-link {
   color: #09d3ac;
 }
+
+.user-card{ 
+  /* border: 2px solid green; */
+  margin: 20px;
+  padding: 20px;
+}
+
+.user-card p {
+  font-weight: bold;
+}
+
+.main-user {
+  /* border: 2px solid red; */
+  background-color: indianred;
+  color: white;
+}

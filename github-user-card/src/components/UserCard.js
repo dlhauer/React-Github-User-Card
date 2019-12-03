@@ -20,6 +20,7 @@ class UserCard extends React.Component {
         {finalFollower && <h2>THE FINAL NERD WHO FOLLOWS THE NERD YOU SEARCHED FOR</h2>}
         <h3>{this.props.user.name}</h3>
         <img src={this.props.user.avatar_url} alt={`avatar for ${this.props.user.login}`} />
+        <p>{`Github handle: ${this.props.user.login}`}</p>
         <p>{`Bio: ${this.props.user.bio}`}</p>
         <p>{`Location: ${this.props.user.location}`}</p>
         <p>{`Public repos: ${this.props.user.public_repos}`}</p>

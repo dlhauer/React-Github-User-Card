@@ -10,8 +10,10 @@ class UsersList extends React.Component {
   render() {
     return (
       <div>
-        <h2>UsersList</h2>
-        <UserCard/>
+        <h1>UsersList</h1>
+        {this.props.users.map( (user, index) => (
+          <UserCard user={user} key={index} />
+        ))}
       </div>
     )
   }
